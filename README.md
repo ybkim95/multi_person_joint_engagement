@@ -95,6 +95,52 @@ Difference between `resume-from` and `load-from`:
 <br>
 
 
+## Visualization (Grad-CAM from videos)
+
+We provide a demo script to visualize GradCAM results using a single video.
+
+
+```shell
+python demo/demo_gradcam.py ${CONFIG_FILE} ${CHECKPOINT_FILE} ${VIDEO_FILE} [--use-frames] \
+    [--device ${DEVICE_TYPE}] [--target-layer-name ${TARGET_LAYER_NAME}] [--fps {FPS}] \
+    [--target-resolution ${TARGET_RESOLUTION}] [--resize-algorithm {RESIZE_ALGORITHM}] [--out-filename {OUT_FILE}]
+```
+
+- `--use-frames`: If specified, the demo will take rawframes as input. Otherwise, it will take a video as input.
+- `DEVICE_TYPE`: Type of device to run the demo. Allowed values are cuda device like `cuda:0` or `cpu`. If not specified, it will be set to `cuda:0`.
+- `FPS`: FPS value of the output video when using rawframes as input. If not specified, it will be set to 30.
+- `OUT_FILE`: Path to the output file which can be a video format or gif format. If not specified, it will be set to `None` and does not generate the output file.
+- `TARGET_LAYER_NAME`: Layer name to generate GradCAM localization map.
+- `TARGET_RESOLUTION`: Resolution(desired_width, desired_height) for resizing the frames before output when using a video as input. If not specified, it will be None and the frames are resized by keeping the existing aspect ratio.
+- `RESIZE_ALGORITHM`: Resize algorithm used for resizing. If not specified, it will be set to `bilinear`.
+
+Examples:
+
+Assume that you are located at `$MMACTION2` and have already downloaded the checkpoints to the directory `checkpoints/`,
+or use checkpoint url from `configs/` to directly load corresponding checkpoint, which will be automatically saved in `$HOME/.cache/torch/checkpoints`.
+
+Get GradCAM results of a I3D model, using a video file as input and then generate an gif file with 10 fps.
+
+   ```shell
+   python demo/demo_gradcam.py configs/recognition/i3d/i3d_r50_video_inference_32x2x1_100e_kinetics400_rgb.py \
+       checkpoints/i3d_r50_video_32x2x1_100e_kinetics400_rgb_20200826-e31c6f52.pth demo/demo.mp4 \
+       --target-layer-name backbone/layer4/1/relu --fps 10 \
+       --out-filename demo/demo_gradcam.gif
+   ```
+
+
+### Result
+
+<p align="center">
+  <img width="700" height="500" src="https://user-images.githubusercontent.com/45308022/221434885-615ebe87-107d-4720-9e6c-71408deed2eb.png">
+</p>
+
+
+
+<br>
+
+
+
 ## Cite
 
 If you use this code in your research, please cite:
