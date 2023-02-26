@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 If needed, submit a agreement to download the dataset used in the paper. 
 
-3. If needed, create pretrained_models folder and download model weights [here]().
+3. If needed, create pretrained_models folder and download model weights [here](https://drive.google.com/drive/folders/1ltV9r7PEQE2KOsW9geDQbibN8_4mEAUq?usp=sharing).
 
 <br>
 
