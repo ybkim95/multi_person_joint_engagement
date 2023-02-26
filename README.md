@@ -65,4 +65,4 @@ If you have any problems with the code or have a question, please open an issue 
 
 ## Acknowledgments and Licenses
 
-The main structure of the code is based on [mmaction2](https://github.com/open-mmlab/mmaction2). Thanks for sharing good practices!
+The main structure of the code is based on [mmaction2](https://github.com/open-mmlab/mmaction2) and [pyskl](https://github.com/kennymckormick/pyskl). Thanks for sharing good practices!
