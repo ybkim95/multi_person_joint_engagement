@@ -24,7 +24,7 @@ Repository contains:
 ```
 conda create python=3.9 -y -n multi_person_joint_eng
 conda activate multi_person_joint_eng
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 2. Download dataset:
@@ -65,4 +65,4 @@ If you have any problems with the code or have a question, please open an issue 
 
 ## Acknowledgments and Licenses
 
-The main structure of the code is based on [mmaction2](https://github.com/open-mmlab/mmaction2) and [pyskl](https://github.com/kennymckormick/pyskl). Thanks for sharing good practices!
+The main structure of the code is based on [mmaction2](https://github.com/open-mmlab/mmaction2), [pyskl](https://github.com/kennymckormick/pyskl) and [SimSwap](https://github.com/neuralchen/SimSwap). Thanks for sharing wonderful works!
