@@ -17,6 +17,12 @@ Repository contains:
 
 <br>
 
+## Video
+
+
+https://user-images.githubusercontent.com/45308022/222018148-0cba067c-cf59-41f8-9de8-56029667925d.mp4
+
+
 ## Get Started
 
 1. Create an environment:
