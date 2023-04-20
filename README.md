@@ -1,7 +1,5 @@
 # Joint Engagement Classification using Video Augmentation Techniques for Multi-person HRI in the wild
 
-[arXiv preprint arXiv:2212.14128](https://arxiv.org/abs/2212.14128)
-
 
 <p align="center">
   <img width="700" height="400" src="https://user-images.githubusercontent.com/45308022/221431152-f07c152e-1b4a-4466-8c51-3a1a3e13d713.png">
