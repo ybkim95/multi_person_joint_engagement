@@ -145,22 +145,7 @@ Get GradCAM results of a I3D model, using a video file as input and then generat
 
 
 
-## Cite
 
-If you use this code in your research, please cite:
-
-```
-@misc{https://doi.org/10.48550/arxiv.2212.14128,
-  doi = {10.48550/ARXIV.2212.14128},
-  url = {https://arxiv.org/abs/2212.14128},
-  author = {Kim, Yubin and Chen, Huili and Alghowinem, Sharifa and Breazeal, Cynthia and Park, Hae Won},
-  keywords = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Joint Engagement Classification using Video Augmentation Techniques for Multi-person Human-robot Interaction},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {arXiv.org perpetual, non-exclusive license}
-}
-```
 
 ## Contact
 
